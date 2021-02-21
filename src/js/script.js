@@ -50,6 +50,29 @@ $(document).ready(function(){
           $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
           $('.overlay, #order').fadeIn('slow');
         })
+      });     
 
-      });
+      function valideForms(form){
+        $(form).validate({
+          rules: {
+            name: "required",
+            phone: "required",
+            email: {
+              required: true,
+              email: true
+            } 
+          },
+          messages: {
+            name: "Please pay attention",
+            email: {
+              required: "We need your email address to contact you",
+              email: "Your email address must be in the format of name@mashegu.co.il"
+            }
+          }
+        });
+      };
+
+      valideForms('#consultation-form');
+      valideForms('#consultation form');
+      valideForms('#order form');
    });
