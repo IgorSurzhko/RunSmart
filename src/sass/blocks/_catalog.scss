@@ -86,7 +86,6 @@
 			margin-top: 10px;
 			font-weight: 500;
 			font-size: 14px;
-			line-height: 14px;
 			text-align: center;
 			text-decoration: underline;
 			text-transform: uppercase;
@@ -165,7 +164,7 @@
 		}
 		&__back {
 			position: absolute;
-			bottom: 0;
+			bottom: -15px;
 			left: 50%;
 			transform: translateX(calc(-50% - 19px));
 			display: block;
