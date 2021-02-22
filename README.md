@@ -1,2 +1,2 @@
 # RunSmart
-html,css,JS.gulp
+html,css,JS.gulp, ajax, php, jQuery, scss, php
