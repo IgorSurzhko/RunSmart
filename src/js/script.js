@@ -94,4 +94,19 @@ $(document).ready(function(){
 				}); 
 				return false;
 			});
+
+			//smooth scroll and page up
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 1000) {
+					$('.pageup').fadeIn('slow');
+				} else {
+					$('.pageup').fadeOut('slow');
+				}
+			});
+
+			$("a[href^='#']").click(function(){
+				const _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+			});
 	 });
