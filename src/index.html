@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -56,8 +57,8 @@
 					<div class="advantages__head">Делимся опытом</div>
 					<div class="advantages__subhead">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
 				</div>
-				<div class="advantages__icon">
-					<img src="icons/heart.svg" alt="heart">
+				<div class="advantages__icon ">
+					<img src="icons/heart.svg" alt="heart" class="advantages__icon_animated">
 					<div class="advantages__head">Заботимся о здоровье</div>
 					<div class="advantages__subhead">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
 				</div>
@@ -364,7 +365,7 @@
 	<section class="reviews">
 		<div class="container">
 			<h2 class="reviews__title">отзывы клиентов</h2>
-			<div class="reviews__block">
+			<div class="reviews__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
 				<img src="img/photo_1.png" alt="" class="reviews__avatar">
 				<div class="reviews__main">
 					<div class="reviews__name">Ирина Иванченко </div>
@@ -373,7 +374,7 @@
 						Спасибо, RunSmart! </div>
 				</div>
 			</div>
-			<div class="reviews__block">
+			<div class="reviews__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
 				<img src="img/photo_2.png" alt="" class="reviews__avatar">
 				<div class="reviews__main">
 					<div class="reviews__name">Иван Сёмочкин</div>
@@ -381,7 +382,7 @@
 					<div class="reviews__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе<br> делал.<br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
 				</div>
 			</div>
-			<div class="reviews__block">
+			<div class="reviews__block wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
 				<img src="img/photo_3.png" alt="" class="reviews__avatar">
 				<div class="reviews__main">
 					<div class="reviews__name">Юлия Дашкина</div>
@@ -453,6 +454,7 @@
 	<script src="js/slick.min.js"></script>	
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
